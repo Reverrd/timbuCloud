@@ -1,0 +1,129 @@
+.advert{
+
+    .adText{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+}
+
+.category{
+    transform: rotate(-90deg);
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+    
+  
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: #FDFDFD;
+    color: rgba(13, 13, 13, 0.70);
+    
+height: fit-content;
+
+}
+.cardName{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cardPrice{
+    font-family:"Concert One", sans-serif ;
+    color:#E53400 ;
+    font-size: 32px;
+    font-weight: 400;
+}
+.cardPayBtn{
+    font-family: "Lato", sans-serif;
+    color: #FDFDFD;
+    font-size: 20px;
+    font-weight: 700;
+
+    button{
+        border-radius: 36px;
+        padding: 10px 16px;
+    }
+}
+.mobileCategory{
+    font-family: "Lato", sans-serif;
+    color: rgba(13, 13, 13, 0.70);
+    background-color: #FDFDFD;
+    border-radius: 4px;
+    height: 32px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 16px;
+}
+.mobileName{
+    color: #19191D;
+font-family: "Lato", sans-serif;
+font-size: 3.3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 107%; /* 12.84px */
+letter-spacing: -0.24px;
+}
+.mobilePrice{
+    font-family:"Concert One", sans-serif ;
+    color:#E53400 ;
+    font-weight: 400;
+}
+.mobileBtn{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 3.7vw;
+}
+.modalBackground{
+    background-color: #E4E4E4;
+    width: 90%;
+    height: auto;
+h1,label,input{
+    font-family: "Lato", sans-serif;
+    color: #19191D;
+}
+h1{
+    font-weight: 700;
+}
+
+p{
+    :first-child{
+        color: #6D6D6D;
+        font-family: "Concert One", sans-serif;
+        font-weight: 400;
+    }
+}
+h2{
+    font-family: "Lato", sans-serif;
+    color: #5D5D5D;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+}
+.productPrice{
+    font-family: "Concert One", sans-serif;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+  }
+  #adWatchText{
+    color: #19191D;
+font-family: "Lato", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+
+letter-spacing: -0.4px;
+  }
+
+  .continueShoppingBtn{
+    font-family: "Inter", sans-serif;
+
+  }
+  

@@ -1,0 +1,46 @@
+.section1{
+    background-image: url('../../assets/section1Bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    z-index: 1000;
+}
+.logo{
+    :first-child{
+        font-family: "Milonga", serif;
+        font-weight: 400;
+    }
+    :nth-child(2){
+        font-family: "Merienda", cursive;
+        font-weight: 400;
+    }
+}
+.navBtn{
+   font-family: "Inter", sans-serif; 
+}
+.signup{
+    font-family: "Inter", sans-serif; 
+    button{
+        font-family: inherit; 
+        background-color:#20AF48 ;
+        border-radius: 36px;
+        padding: 5px 16px;
+        
+    }
+}
+.heroText{
+    font-family:"Lato", sans-serif ;
+    font-weight: 700;
+}
+.orderBtn{
+    font-family: "Inter", sans-serif;
+
+    button{
+        font-family: inherit;
+        background-color:#20AF48 ;
+        border-radius: 36px;
+        padding: 5px 16px;
+        
+    }
+}
