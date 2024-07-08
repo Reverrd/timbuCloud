@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="flex justify-between">
         <div>
           <div>
-            <span className="timbu">
+            <span className="xxs:text-[4vw] md:text-[2.5vw] timbu">
               timbu
             </span>
-            <span className="cloud">
+            <span className="xxs:text-[4vw] md:text-[2.5vw] cloud">
               Cloud
             </span>
           </div>
@@ -22,21 +22,21 @@ export default function Footer() {
           </div>
         </div>
         <div className="secondFooter">
-          <h3 className="pb-2" >
+          <h3 className="xxs:text-[4vw] md:text-[2.5vw] pb-2" >
             Let Us Help You
           </h3>
-          <p className="pb-2">
+          <div className="pb-2">
             Account Details
-          </p>
-          <p className="pb-2">
+          </div>
+          <div className="pb-2">
             Order History
-          </p>
-          <p>
+          </div>
+          <div>
             help
-          </p>
+          </div>
         </div>
-        <div>
-          <h4 className="pb-2">
+        <div className="thirdfooter">
+          <h4 className="xxs:text-[4vw] md:text-[2.5vw] pb-2">
             Categories
           </h4>
           <p className="pb-2">Smartwatches</p>
@@ -44,8 +44,11 @@ export default function Footer() {
           <p>Sports/Games</p>
         </div>
         <div>
-          <div>
-            <img src="./assets/Appstorebutton.png" alt="" />
+          <div >
+            <div>
+              <img src="./assets/Appstorecontain.png" alt="" />
+            </div>
+            <img className="z-50" src="./assets/Appstorebutton.png" alt="" />
           </div>
           <div></div>
         </div>

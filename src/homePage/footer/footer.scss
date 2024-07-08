@@ -7,8 +7,23 @@
     font-weight: 400;
 }
 .secondFooter{
+    font-family: "Lato", sans-serif;
     h3{
-        font-family: "Lato", sans-serif;
+        
         font-weight: 700;
+    }
+    div{
+        color:rgba(175, 173, 163, 0.90);
+    }
+
+}
+.thirdfooter{
+    font-family: "Lato", sans-serif;
+    h4{
+    
+    font-weight: 700;
+    }
+    p{
+        color:rgba(175, 173, 163, 0.90)
     }
 }
