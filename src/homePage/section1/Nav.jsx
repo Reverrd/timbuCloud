@@ -6,18 +6,14 @@ export default function Nav() {
     
       <div className=" nav px-3 bg-[#040507] h-[70px]  w-full flex items-center fixed top-0 left-0   justify-between">
         <div className="md:hidden">
-        <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="4" rx="2" fill="#F24E1E"/>
-            <rect y="8" width="32" height="4" rx="2" fill="#F24E1E"/>
-            <rect y="16" width="32" height="4" rx="2" fill="#F24E1E"/>
-        </svg>
+       <img src="./assets/Navigation.png" alt="" />
 
         </div>
         <div className="logo">
-            <span className="cursor-pointer xxs:text-[8vw]     md:text-[4vw] text-[#FDFDFD]">
+            <span className="cursor-pointer xxs:text-[6.5vw]     md:text-[4vw] text-[#FDFDFD]">
                 timbu
             </span>
-            <span className="xxs:text-[8vw] md:text-[4vw] text-[#FDFDFD]">
+            <span className="xxs:text-[6.5vw] md:text-[4vw] text-[#FDFDFD]">
                 Cloud
             </span>
         </div>
@@ -33,12 +29,12 @@ export default function Nav() {
             </button>
 
         </div>
-        <div className="flex justify-end xxs:hidden md:flex">
+        <div className="flex justify-end ">
             <div className="relative">
                 <div>
-                <img src="./assets/Cart.png" alt="" />
+                <img className="w-[11.5vw]" src="./assets/Cart.png" alt="" />
                 </div>
-                <span className="absolute text-[#191919] font-bold left-[53%] top-[30%] text-[30px]">
+                <span className="absolute text-[#191919] font-bold left-[53%] top-[30%] text-[2vw]">
                 {'0'}
                 </span>
             </div>
