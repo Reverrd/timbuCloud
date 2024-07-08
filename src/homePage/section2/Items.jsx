@@ -2,22 +2,22 @@ import { useState } from 'react'
 import luxuryTimePieceData from '../../data/luxuryTimePieceData'
 import smartWatchData from '../../data/smartwatchData'
 import sportsData from '../../data/sportsData'
-import CheckoutModal from './actionButtons/CheckoutModal'
+import CheckoutModal from '../section2/actionButtons/CheckoutModal'
 
 export default function Items() {
   const [ispay, setIsPay] = useState(false)
   const [addCart, setAddCart] = useState(0)
   const countCartAdd = ()=>{
-    setAddCart((prevAddCart) =>  (prevAddCart + 1))
+    setAddCart(addCart + 1)
   }
   const countCartMinus = ()=>{
-    setAddCart((prevAddCart) =>{
-      if(prevAddCart>=0){
-        return prevAddCart - 1
-      }else{
+    
+      if(addCart>=0 ){
+        setAddCart(addCart - 1)
+      }if(addCart<0){
         return 0
       }
-    })
+    
    
   }
   const handlePay = ()=>{
@@ -80,7 +80,7 @@ export default function Items() {
                           {addCart}
                       </div>
                       <div className='pl-4'>
-                        <button className='mobileBtn bg-[#20AF48] rounded-[36px] px-4 py-2 text-[#FDFDFD]'>
+                        <button onClick={()=>handlePay(smartWatch.id)} className='mobileBtn bg-[#20AF48] rounded-[36px] px-4 py-2 text-[#FDFDFD]'>
                           Pay now
                         </button>
                       </div>
@@ -140,7 +140,7 @@ export default function Items() {
                         </svg>
                       </div>
                       <div className='pl-4'>
-                        <button className='mobileBtn bg-[#20AF48] rounded-[36px] px-4 py-2 text-[#FDFDFD]'>
+                        <button onClick={()=>handlePay(luxuryTime.id)} className='mobileBtn bg-[#20AF48] rounded-[36px] px-4 py-2 text-[#FDFDFD]'>
                           Pay now
                         </button>
                       </div>
@@ -153,7 +153,7 @@ export default function Items() {
         {/* small screen wrapper end */}
       </div>
       {/* bigger screens */}
-     <div className='xxs:hidden smd:flex flex-col justify-between relative'>
+    <div className='xxs:hidden smd:flex flex-col justify-between relative'>
       <div className=''>
         <div className=''>
             
@@ -274,7 +274,7 @@ export default function Items() {
                             </div>
                             <div className='flex justify-between items-center'>
                               <div className='cardPayBtn'>
-                                  <button className='bg-[#20AF48]'>
+                                  <button onClick={()=>handlePay(luxuryTime.id)} className='bg-[#20AF48]'>
                                       Pay Now
                                   </button>
                               </div>
@@ -346,7 +346,7 @@ export default function Items() {
                             </div>
                             <div className='flex justify-between items-center'>
                             <div className='cardPayBtn'>
-                                <button className='bg-[#20AF48]'>
+                                <button onClick={()=>handlePay(sport.id)} className='bg-[#20AF48]'>
                                     Pay Now
                                 </button>
                             </div>
@@ -375,14 +375,16 @@ export default function Items() {
         
                     
         </div>
-        </div>
-        {
+        
+          {
             ispay && (
-              <div className='z z-[2000] overflow-y-scroll bg-[#00000077] flex items-center fixed top-0 left-0 h-screen w-screen'>
-            <CheckoutModal />
+              <div className='bg-[#00000070] fixed top-0 left-0 h-[100vh] w-screen'>
+            <CheckoutModal ispay={ispay} setIsPay={setIsPay} />
             </div>
             )
           }
+        
+        </div>
         </div>
   )
 }

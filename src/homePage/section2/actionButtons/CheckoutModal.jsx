@@ -1,32 +1,40 @@
+
 import advertWatchData from "../../../data/advertWatch";
 import '../section2.scss'
+import PropTypes from 'prop-types'
 
-export default function CheckoutModal() {
+export default function CheckoutModal({ispay, setIsPay}) {
+  
+
+  const continueShopping = ()=>{
+    setIsPay(!ispay)
+  }
   return (
     <div className="w-full  relative   h-auto flex justify-center items-center   ">
     {/* Overall card */}
     <div className="modalBackground hide-scrollbar  rounded-[36px] flex flex-col justify-between mt-[200px] pt-[100px] pb-[50px] h-[100vh] overflow-y-scroll  ">
-      {/* Top section */}
+      {/* Top section ------------------------------------------------------------------------------- */}
       <div className=" flex justify-center">
-        {/* Order summary */}
+        {/* Order summary ------------------------------------------------------------------------- */}
         <div className="py-[48px] px-[24px] bg-[#FDFDFD] rounded-[16px] ">
-            <div className=" w-[400px] h-[300px] border flex flex-col px-[50px] pt-[60px]">
-                <h1 className="text-[28px]">Order Summary</h1>
+            <div className=" w-[28vw] h-[40vh]  flex flex-col px-[20px] pt-[60px]">
+                <h1 className="text-[2.5vw]">Order Summary</h1>
                 <div className="flex">
                   <span><img src={"/"} alt="" /></span>
                   <span className="text-[16px]">
                     {"name of product"}
                   </span>
                 </div>
-                <p className="text-[32px]">
+                <p className="text-[2.5vw]">
                   <span>Total:</span><span className="productPrice text-[#E53400] ">N{'429,700'}</span>
                 </p>
             </div>
         </div>
-        {/* Payment Sections */}
-        <div className="bg-[#FDFDFD] rounded-[16px] ml-6">
-        <div className=" w-[400px]   " >
+        {/* Payment Sections -------------------------------------------------------------------------------- */}
+        <div className="bg-[#FDFDFD] rounded-[16px] ml-6 py-[48px] px-[24px] ">
+        <div className=" w-[28vw]" >
           <h1>Make Payment</h1>
+          {/* Form starts */}
           <div>
               <form action="POST">
                 <div className="flex border border-black">
@@ -53,6 +61,7 @@ export default function CheckoutModal() {
                 
               </form>
           </div>
+          {/* Form Ends */}
           <div>
             some writeups
           </div>
@@ -63,7 +72,7 @@ export default function CheckoutModal() {
         {}
       </div>
       <div className=" flex justify-center">
-        <button className="continueShoppingBtn text-[1.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]">
+        <button onClick={continueShopping} className="continueShoppingBtn text-[1.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]">
         Continue Shopping
         </button>
       </div>
@@ -87,4 +96,8 @@ export default function CheckoutModal() {
     </div>
     </div>
   )
+}
+CheckoutModal.propTypes = {
+  ispay: PropTypes.bool.isRequired,
+  setIsPay: PropTypes.bool.isRequired
 }
