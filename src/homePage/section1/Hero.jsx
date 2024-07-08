@@ -1,9 +1,9 @@
-import { useState } from "react";
+
 
 
 export default function Hero() {
 
-  const [cartCount, setCartCount] = useState(0)
+  
   const handleScroll = ()=>{
     const e = document.getElementById('list');
     if (e) {
@@ -26,18 +26,10 @@ export default function Hero() {
         <div className="orderBtn  flex justify-center  ">
         <button onClick={handleScroll} className=" text-[1.5rem]">Order Now</button>
         </div>
-        <div className="flex justify-end xxs:hidden md:flex">
-            <div className="relative">
-                <div>
-                <img src="./assets/Cart.png" alt="" />
-                </div>
-                <span className="absolute text-[#191919] font-bold left-[53%] top-[30%] text-[30px]">
-                {cartCount}
-                </span>
-            </div>
+       
             
         </div>
       </div>
-    </div>
+    
   )
 }

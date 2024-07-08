@@ -1,30 +1,34 @@
 
-
+import "./footer.scss"
 export default function Footer() {
   return (
-    <div className="bg-[#191919]">
-      <div className="flex justify-around">
+    <div className="bg-[#191919] h-[200px] text-[#FDFDFD]">
+      <div className="flex justify-between">
         <div>
           <div>
-            <span>
+            <span className="timbu">
               timbu
             </span>
-            <span>
+            <span className="cloud">
               Cloud
             </span>
           </div>
           <div>
-            social media
+            <span>
+
+            </span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <div className="">
-          <h3>
+        <div className="secondFooter">
+          <h3 className="pb-2" >
             Let Us Help You
           </h3>
-          <p>
+          <p className="pb-2">
             Account Details
           </p>
-          <p>
+          <p className="pb-2">
             Order History
           </p>
           <p>
@@ -32,15 +36,17 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h4>
+          <h4 className="pb-2">
             Categories
           </h4>
-          <p>Smartwatches</p>
-          <p>Luxury Time Piece</p>
+          <p className="pb-2">Smartwatches</p>
+          <p className="pb-2">Luxury Time Piece</p>
           <p>Sports/Games</p>
         </div>
         <div>
-          <div></div>
+          <div>
+            <img src="./assets/Appstorebutton.png" alt="" />
+          </div>
           <div></div>
         </div>
       </div>
