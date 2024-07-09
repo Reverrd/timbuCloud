@@ -3,7 +3,7 @@
 export default function Nav() {
   // const [cartCount, setCartCount] = useState(0)
   return (
-    <div className=" nav px-3 bg-[#040507] h-[70px]  w-full flex items-center fixed top-0 left-0   justify-between">
+    <div className=" nav px-3 bg-[#040507] h-[70px]   w-full flex items-center fixed top-0 left-0   justify-between">
       <div className="md:hidden">
         <img src="./assets/Navigation.png" alt="" />
       </div>

@@ -1,13 +1,17 @@
 import advertWatchData from "../../../data/advertWatch";
 import "../section2.scss";
 import PropTypes from "prop-types";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 export default function CheckoutModal({ ispay, setIsPay }) {
+  const notify = () => toast("Wow so easy!");
   const continueShopping = () => {
     setIsPay(!ispay);
   };
   return (
-    <div className="w-full  relative   h-auto flex justify-center items-center   ">
+    <div className="w-full  relative   h-auto flex justify-center items-center z-40   ">
+    
       {/* Overall card */}
       <div className="modalBackground hide-scrollbar  rounded-[36px] flex flex-col justify-between mt-[200px] pt-[100px] pb-[50px] h-[100vh] overflow-y-scroll  ">
         {/* Top section ------------------------------------------------------------------------------- */}
@@ -36,12 +40,13 @@ export default function CheckoutModal({ ispay, setIsPay }) {
           </div>
           {/* Payment Sections -------------------------------------------------------------------------------- */}
           <div className="bg-[#FDFDFD] rounded-[16px]  py-[48px] px-[24px] w-full ">
+          <ToastContainer position="top-center" draggable style={{ position: "absolute", top: "10%", zIndex: "100"}} autoClose={5000} transition={{ duration: 1000 }} />
             <div className=" lg:w-[28vw] w-full text-center">
               <h1 className=" font-extrabold text-2xl">Make Payment</h1>
               {/* Form starts */}
               <div>
                 <form
-                  action="POST"
+                 
                   className=" flex items-center   flex-col gap-3 "
                 >
                   <input
@@ -69,12 +74,13 @@ export default function CheckoutModal({ ispay, setIsPay }) {
                     />
                   </div>
                   
-                  <button className="text-[5vw] bg-[#20AF48] font-bold my-4 w-full text-[#fdfdfd] rounded-3xl px-4 py-2">pay now</button>
-                  
+                  <button onClick={notify} className="text-[5vw] bg-[#20AF48] font-bold my-4 w-full text-[#fdfdfd] rounded-3xl px-4 py-2">pay now</button>
+                
                 </form>
               </div>
               {/* Form Ends */}
               <div className=" font-bold text-[#8E8E8E] ">By clicking on any “Continue” button, you agree to timbu <span className=" text-[#565CEE]">Terms and Conditions</span>  and <span className=" text-[#565CEE]">Privacy Policy.</span> </div>
+        
             </div>
           </div>
         </div>
