@@ -88,7 +88,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
         <div className=" flex justify-center my-4">
           <button
             onClick={continueShopping}
-            className="continueShoppingBtn text-[3.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]"
+            className="continueShoppingBtn text-[3.5vw] bg-[#F24E1E] rounded-3xl px-7 py-[15px]"
           >
             Continue Shopping
           </button>
