@@ -66,7 +66,7 @@ const Smartwatches = () => {
                   {/*  */}
                   <img className="w-[10vw]" src="./assets/Cart.png" alt="" />
                 </div>
-                <div className="w-4 h-4 border text-[4vw] border-black">{}</div>
+                <div className="w-4 h-4 border text-[2vw] border-black">{addCart}</div>
                 <div className="md:pl-4 xxs:pl-1">
                   <button
                     onClick={handlePay}

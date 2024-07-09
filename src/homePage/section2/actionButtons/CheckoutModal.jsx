@@ -74,7 +74,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
                     />
                   </div>
                   
-                  <button onClick={notify} className="text-[5vw] bg-[#20AF48] font-bold my-4 w-full text-[#fdfdfd] rounded-3xl px-4 py-2">pay now</button>
+                  <button onClick={notify} className="text-[2.5vw] bg-[#20AF48] font-bold my-4 w-full text-[#fdfdfd] rounded-3xl px-4 py-2">pay now</button>
                 
                 </form>
               </div>
@@ -85,7 +85,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
           </div>
         </div>
         <div>{}</div>
-        <div className=" flex justify-center">
+        <div className=" flex justify-center my-4">
           <button
             onClick={continueShopping}
             className="continueShoppingBtn text-[1.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]"
