@@ -69,7 +69,7 @@ const Smartwatches = () => {
                 <div className="w-4 h-4 border text-[4vw] border-black">{}</div>
                 <div className="md:pl-4 xxs:pl-1">
                   <button
-                    onClick={() => handlePay}
+                    onClick={handlePay}
                     className="mobileBtn bg-[#20AF48] md:rounded-[36px] xxs:rounded-[16px] md:px-4 xxs:px-2 py-2 text-[#FDFDFD] text-[3vw]"
                   >
                     Pay now
@@ -81,10 +81,10 @@ const Smartwatches = () => {
         </div>
       </div>
       {ispay && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-            <CheckoutModal ispay={ispay} setIsPay={setIsPay} />
-          </div>
-        )}
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+          <CheckoutModal ispay={ispay} setIsPay={setIsPay} />
+        </div>
+      )}
     </div>
   );
 };

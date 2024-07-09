@@ -35,63 +35,26 @@ const Luxury = () => {
                 <div className="  ">
                   <div
                     className="cursor-pointer"
-                    onClick={() => countCartMinus(luxuryTime.id)}
+                    onClick={() => countCartMinus(luxuryTimePieceData.id)}
                   >
-                    <svg
+                    <img
                       className="mb-4 w-[3.9vw]"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 14 15"
-                      fill="none"
-                    >
-                      <rect
-                        y="0.5"
-                        width="14"
-                        height="14"
-                        rx="2"
-                        fill="#20AF48"
-                      />
-                      <path
-                        d="M10.75 6.5H3.25C2.91848 6.5 2.60054 6.60536 2.36612 6.79289C2.1317 6.98043 2 7.23478 2 7.5C2 7.76522 2.1317 8.01957 2.36612 8.20711C2.60054 8.39464 2.91848 8.5 3.25 8.5H10.75C11.0815 8.5 11.3995 8.39464 11.6339 8.20711C11.8683 8.01957 12 7.76522 12 7.5C12 7.23478 11.8683 6.98043 11.6339 6.79289C11.3995 6.60536 11.0815 6.5 10.75 6.5Z"
-                        fill="#FDFDFD"
-                      />
-                    </svg>
+                      src="./assets/minus.png"
+                      alt=""
+                    />
                   </div>
                   <div
                     className="cursor-pointer"
-                    onClick={() => countCartAdd(luxuryTime.id)}
+                    onClick={() => countCartAdd(luxuryTimePieceData.id)}
                   >
-                    <svg
+                    <img
                       className="w-[3.9vw] mb-4 "
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 14 15"
-                      fill="none"
-                    >
-                      <rect
-                        y="0.5"
-                        width="14"
-                        height="14"
-                        rx="2"
-                        fill="#20AF48"
-                      />
-                      <path
-                        d="M9.875 5.875H7.625V3.625C7.625 3.32663 7.50647 3.04048 7.29549 2.8295C7.08452 2.61853 6.79837 2.5 6.5 2.5C6.20163 2.5 5.91548 2.61853 5.70451 2.8295C5.49353 3.04048 5.375 3.32663 5.375 3.625L5.41494 5.875H3.125C2.82663 5.875 2.54048 5.99353 2.3295 6.20451C2.11853 6.41548 2 6.70163 2 7C2 7.29837 2.11853 7.58452 2.3295 7.79549C2.54048 8.00647 2.82663 8.125 3.125 8.125L5.41494 8.08506L5.375 10.375C5.375 10.6734 5.49353 10.9595 5.70451 11.1705C5.91548 11.3815 6.20163 11.5 6.5 11.5C6.79837 11.5 7.08452 11.3815 7.29549 11.1705C7.50647 10.9595 7.625 10.6734 7.625 10.375V8.08506L9.875 8.125C10.1734 8.125 10.4595 8.00647 10.6705 7.79549C10.8815 7.58452 11 7.29837 11 7C11 6.70163 10.8815 6.41548 10.6705 6.20451C10.4595 5.99353 10.1734 5.875 9.875 5.875Z"
-                        fill="#FDFDFD"
-                      />
-                    </svg>
+                      src="./assets/add.png"
+                      alt=""
+                    />
                   </div>
-                  <div className="cursor-pointer">
-                    <svg
-                      className="w-[3.9vw]"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 14 15"
-                      fill="none"
-                    >
-                      <path
-                        d="M10.2002 9.83801C9.44682 10.6602 8.48627 11.6448 7.31537 12.7937C7.31513 12.7939 7.31488 12.7941 7.31464 12.7944L7 13.1018L6.68566 12.7947C6.68532 12.7943 6.68497 12.794 6.68463 12.7937C5.51418 11.6443 4.55347 10.6595 3.79935 9.83757C3.04984 9.02067 2.47086 8.30561 2.05142 7.68997C1.63151 7.07365 1.36578 6.54679 1.22317 6.10537C1.0745 5.64523 1.00042 5.17659 1 4.69577C1.00008 3.72405 1.29108 2.97526 1.83935 2.37769C2.38308 1.78507 3.0307 1.5 3.85 1.5C4.29629 1.5 4.7183 1.60135 5.12805 1.81039C5.53997 2.02054 5.90025 2.31812 6.21145 2.71715L7 3.72827L7.78855 2.71715C8.09975 2.31812 8.46003 2.02054 8.87195 1.81039C9.2817 1.60135 9.70371 1.5 10.15 1.5C10.9693 1.5 11.6169 1.78507 12.1607 2.37769C12.709 2.97534 13 3.72426 13 4.69619C13 5.17628 12.9262 5.64486 12.7775 6.10562C12.6349 6.54716 12.3692 7.07373 11.949 7.68929C11.5288 8.30496 10.9495 9.02038 10.2002 9.83801Z"
-                        stroke="#F24E1E"
-                        strokeWidth="2"
-                      />
-                    </svg>
+                  <div>
+                    <img className="w-[3.9vw]" src="./assets/love.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -122,8 +85,8 @@ const Luxury = () => {
                 </div>
                 <div className="pl-4">
                   <button
-                    onClick={() => handlePay(luxuryTime.id)}
-                    className="mobileBtn bg-[#20AF48] rounded-[36px] px-4 py-2 text-[#FDFDFD]"
+                    onClick={handlePay}
+                    className="mobileBtn bg-[#20AF48] md:rounded-[36px] xxs:rounded-[16px] md:px-4 xxs:px-2 py-2 text-[#FDFDFD] text-[3vw]"
                   >
                     Pay now
                   </button>
@@ -134,10 +97,10 @@ const Luxury = () => {
         </div>
       </div>
       {ispay && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-            <CheckoutModal ispay={ispay} setIsPay={setIsPay} />
-          </div>
-        )}
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+          <CheckoutModal ispay={ispay} setIsPay={setIsPay} />
+        </div>
+      )}
     </div>
   );
 };
