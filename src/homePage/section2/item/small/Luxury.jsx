@@ -83,6 +83,7 @@ const Luxury = () => {
                     />
                   </svg>
                 </div>
+                <div className="w-4 h-4 border text-[2vw] border-black">{addCart}</div>
                 <div className="pl-4">
                   <button
                     onClick={handlePay}
