@@ -60,21 +60,21 @@ export default function CheckoutModal({ ispay, setIsPay }) {
                     <input
                       type="text"
                       placeholder="MM/YY"
-                      className="input input-bordered input-primary w-full max-w-xs"
+                      className="input bg-slate-100 w-full rounded-lg  input-bordered input-primary  max-w-xs"
                     />
                     <input
                       type="text"
                       placeholder="CVV"
-                      className="input py-2 px-2 input-bordered input-primary w-full max-w-xs"
+                      className="input bg-slate-100 w-full rounded-lg  py-2 px-2 input-bordered input-primary  max-w-xs"
                     />
                   </div>
-                  <div>
-                    <button type="submit">Pay Now</button>
-                  </div>
+                  
+                  <button className="text-[5vw] bg-[#20AF48] font-bold my-4 w-full text-[#fdfdfd] rounded-3xl px-4 py-2">pay now</button>
+                  
                 </form>
               </div>
               {/* Form Ends */}
-              <div>some writeups</div>
+              <div className=" font-bold text-[#8E8E8E] ">By clicking on any “Continue” button, you agree to timbu <span className=" text-[#565CEE]">Terms and Conditions</span>  and <span className=" text-[#565CEE]">Privacy Policy.</span> </div>
             </div>
           </div>
         </div>
