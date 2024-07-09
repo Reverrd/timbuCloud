@@ -95,7 +95,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
         </div>
         {/* advertSession */}
         <div>
-          <h2 className="font pl-[65px]">
+          <h2 className="text-[4vw] pb-4 pl-3 md:pl-[65px]">
             Check out many other items from the store
           </h2>
           <div className="flex  justify-center">
