@@ -10,7 +10,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
     setIsPay(!ispay);
   };
   return (
-    <div className="w-full  relative   h-auto flex justify-center items-center z-40   ">
+    <div className="w-full z-[1000]  relative   h-auto flex justify-center items-center    ">
     
       {/* Overall card */}
       <div className="modalBackground hide-scrollbar  rounded-[36px] flex flex-col justify-between mt-[200px] pt-[100px] pb-[50px] h-[100vh] overflow-y-scroll  ">
@@ -88,7 +88,7 @@ export default function CheckoutModal({ ispay, setIsPay }) {
         <div className=" flex justify-center my-4">
           <button
             onClick={continueShopping}
-            className="continueShoppingBtn text-[1.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]"
+            className="continueShoppingBtn text-[3.5vw] bg-[#F24E1E] rounded-[8px] py-[15px]"
           >
             Continue Shopping
           </button>

@@ -6,17 +6,20 @@ import CheckoutModal from "../../actionButtons/CheckoutModal";
 
 const Luxury = () => {
   const [ispay, setIsPay] = useState(false);
-  const [addCart, setAddCart] = useState(0);
-  const countCartAdd = () => {
-    setAddCart(addCart + 1);
+  const [cartCounts, setCartCounts] = useState({}); // Initialize an empty object
+
+  const handleAddToCartSmall = (id) => {
+    setCartCounts((prevCounts) => ({...prevCounts, [id]: (prevCounts[id] || 0) + 1 }));
   };
-  const countCartMinus = () => {
-    if (addCart >= 0) {
-      setAddCart(addCart - 1);
-    }
-    if (addCart < 0) {
-      return 0;
-    }
+
+  const handleRemoveFromCartSmall = (id) => {
+    setCartCounts((prevCounts) => {
+      const count = prevCounts[id] || 0;
+      if (count > 0) {
+        return {...prevCounts, [id]: count - 1 };
+      }
+      return prevCounts;
+    });
   };
   const handlePay = () => {
     setIsPay(true);
@@ -35,7 +38,7 @@ const Luxury = () => {
                 <div className="  ">
                   <div
                     className="cursor-pointer"
-                    onClick={() => countCartMinus(luxuryTimePieceData.id)}
+                    onClick={() => handleRemoveFromCartSmall(luxuryTimePieceData.id)}
                   >
                     <img
                       className="mb-4 w-[3.9vw]"
@@ -45,7 +48,7 @@ const Luxury = () => {
                   </div>
                   <div
                     className="cursor-pointer"
-                    onClick={() => countCartAdd(luxuryTimePieceData.id)}
+                    onClick={() => handleAddToCartSmall(luxuryTimePieceData.id)}
                   >
                     <img
                       className="w-[3.9vw] mb-4 "
@@ -83,7 +86,7 @@ const Luxury = () => {
                     />
                   </svg>
                 </div>
-                <div className="w-4 h-4 border text-[2vw] border-black">{addCart}</div>
+                <div className="w-4 h-4 border text-[2vw] border-black">{cartCounts[luxuryTime.id] || 0}</div>
                 <div className="pl-4">
                   <button
                     onClick={handlePay}
